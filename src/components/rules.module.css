@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+
+.rules_body{
+    background: #242222;
+    width: 50vw;
+    height: 75vh;
+    padding-top: 15px;
+    position: relative;
+    border: 2px solid #F178B6;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 9px 2px rgba(0, 0, 0, 0.36);
+    border-radius: 8px;
+}
+.rules{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 48px;
+    position: relative;
+    left: 45%;
+    color: #FFFFFF;
+    margin-bottom: 5%;
+}
+.content{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 375;
+    font-size: 22px;
+    position: relative;
+    font-weight: 500;
+    color: #FFFFFF;
+
+}
+ol li { 
+    padding: 5px 0px;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow:visible;
+}
+a:link,a:hover,a:visited,a:active{
+    color:white
+}
+.close{
+    position:absolute;
+    right:0px;
+    background-color: #242222;
+}

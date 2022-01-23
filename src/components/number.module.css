@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Aquire;
+    src: url(AquireBold-8Ma60.otf);
+}
+
+.number{
+    color:#F28FE4;
+    font-size: 6rem;
+    font-weight: 900;
+    font-family: Aquire;
+    left: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .number{
+        font-size: 4rem;
+    }
+}

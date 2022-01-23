@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: Aquire;
+    src: url(AquireBold-8Ma60.otf);
+}
+@font-face{
+    font-family:Montserrat;
+    src: url(Montserrat-Medium.ttf);
+}
+
+.bg{
+    height : 100%;
+    margin :0;
+}
+
+
+.hero{
+    background-image: url("background.png"); 
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    /* background-color: #171717; */
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    align-items:center;
+    justify-content: center;
+    font-size: 5em;
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
+    text-align: center;
+    /* padding-top: 25px; */
+}
+
+.tagline{
+    padding: 6% 0 2% 0;
+    font-family: Aquire;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 44px;
+    color: #F28FE4;
+}
+.units{
+    display: flex;
+    justify-content: center;
+    font-family: Aquire;
+    color: white;
+    font-size: 20px;
+    gap:40px;
+}
+.img{
+    padding-top: 15px;
+    width: 10px;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+}
+.title{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    letter-spacing: 0.2em;
+}
+.cyber{
+    font-family: Montserrat;
+    color: #E6E6E6;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    
+}
+.hawk{
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 59px;
+    color: #F28FE4;
+    -webkit-text-fill-color:#171717;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #F28FE4;
+}
+
+.pop{
+    background: #F28FE4;
+    border-radius: 27px; 
+    font-family: Montserrat;
+    color: white;
+    border: none;
+    font-style: normal;
+    font-weight: bold;    
+    width: 120px;  
+    height: 30px; 
+    margin-top: 5%;
+}
+.pop:focus ~.rules_body{
+    display:block;
+}
+.close:focus ~.rules_body{
+    display:none;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+
+.rules_body{
+    background: #242222;
+    width: 50vw;
+    height: auto;
+    padding-top: 15px;
+    position: absolute;
+    border: 2px solid #F178B6;
+    box-sizing: border-box;
+    box-shadow: 0px 6px 9px 2px rgba(0, 0, 0, 0.36);
+    border-radius: 8px;
+    display: none;
+    left: 50%;
+    top:47%;
+    transform: translate(-50%,-47%);
+}
+.rules{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 48px;
+    position: relative;
+    
+    color: #FFFFFF;
+    margin-bottom: 10%;
+}
+.content{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 375;
+    font-size: 22px;
+    position: relative;
+    font-weight: 500;
+    color: #FFFFFF;
+
+}
+
+ul li { 
+    /* padding: 5px 0px; */
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow:visible;
+    list-style-type: none;
+}
+a:link,a:hover,a:visited,a:active{
+    color:white
+}
+
+.close{
+    position:absolute;
+    right:0px;
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #F178B6;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    html { 
+        background: url("background-responsive.png") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .hero{
+        background-image: url("background-responsive.png");
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        background-color: #171717;
+    }
+
+    .title{
+        display:flex;
+        justify-content: center;
+        gap:20px;
+        letter-spacing: 0.2em;
+    }
+
+    .img{
+        padding-top: 22%;
+        width: 60px;
+        height: 60px;
+    }
+
+    .cyber{
+        font-size: 30%;
+    }
+
+    .hawk{
+        font-size: 30%;
+    }
+
+    .tagline{
+        padding: 6% 0 2% 0;
+        font-family: Aquire;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 44px;
+        color: #F28FE4;
+    }
+
+    .units{
+        font-size: 0.8rem;
+    }
+
+    .pop{   
+        width: 120px;  
+        height: 30px; 
+    }
+    .rules_body{
+
+        display:block;
+        overflow:auto;
+        height: 100%;
+        left: 50%;
+        top:47%;
+        transform: translate(-50%,-47%);
+    }
+    .rules{
+        font-size: 20px;
+        margin-bottom: 15%;
+    }
+    ul li{
+        font-size: 15px;
+    }
+    .rules_body{
+        height: 70vh;
+    }
+    
+}
+
+
